@@ -186,7 +186,7 @@ main h2 {
     
     background-image:
         linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.45)),
-        url('images/img-fundo.jpg');
+        url('images/bg-desktop.jpg');
     
     background-size: cover;
     background-position: center;
@@ -552,6 +552,7 @@ main h2 {
 
 @media (max-width: 768px) {
     .hero {
+        background-image: url('images/bg-mobile.jpg');
         min-height: 80vh;
         height: auto;
 
@@ -564,10 +565,11 @@ main h2 {
         text-align: center;
 
         background-attachment: scroll;
+        background-position: center;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         letter-spacing: -1px;
         line-height: 1.2;
         margin-bottom: 20px;
@@ -575,7 +577,7 @@ main h2 {
     }
 
     .hero .hero-desc {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 0;
         max-width: 100%;
         margin-bottom: 30px;
@@ -651,6 +653,12 @@ main h2 {
 
     nav li:last-child a {
         border-bottom: none;
+    }
+
+    .post-list {
+        grid-template-columns: 1;
+        padding: 0;
+        gap: 20px;
     }
 
     .container {
